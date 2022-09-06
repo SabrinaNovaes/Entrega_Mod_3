@@ -1,0 +1,57 @@
+package model;
+
+import java.time.LocalDate;
+
+public class Compra {
+	
+	private int id_compra;
+	private LocalDate data;
+	
+	private int id_cpf;
+	private int id_pcts;
+	
+	public Compra () {
+		
+	}
+
+	public Compra(int id_compra, LocalDate data, int id_cpf, int id_pcts) {
+		super();
+		this.id_compra = id_compra;
+		this.data = data;
+		this.id_cpf = id_cpf;
+		this.id_pcts = id_pcts;
+	}
+
+	public int getId_compra() {
+		return id_compra;
+	}
+
+	public void setId_compra(int id_compra) {
+		this.id_compra = id_compra;
+	}
+
+	public LocalDate getData() {
+		return data;
+	}
+
+	public void setData(LocalDate data) {
+		this.data = data;
+	}
+
+	public int getId_cpf() {
+		return id_cpf;
+	}
+
+	public void setId_cpf(int id_cpf) {
+		this.id_cpf = id_cpf;
+	}
+
+	public int getId_pcts() {
+		return id_pcts;
+	}
+
+	public void setId_pcts(int id_pcts) {
+		this.id_pcts = id_pcts;
+	}
+
+}

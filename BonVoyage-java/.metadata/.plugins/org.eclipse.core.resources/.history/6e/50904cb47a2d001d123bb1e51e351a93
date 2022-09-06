@@ -1,0 +1,97 @@
+package CRUD;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import DAO.destinoDAO;
+import DAO.pacotesDAO;
+import model.Destinos;
+import model.Pacotes;
+
+public class DestinosDAO {
+
+public static void main (String[] args) {
+		
+		destinoDAO destinoDAO = new destinoDAO();
+		
+		 Scanner input = new Scanner(System.in);
+		 
+		 int opcao = 0;
+		 int posicao = 0;
+		 
+		 int id_destinos;
+		 String internacionais = "";
+		 String nacionais = "";
+		 String pcts_familia ="";
+		 		 
+		 
+		 List<Destinos> pacotes = new ArrayList<Destinos> ();
+		 
+		 do {
+			 System.out.println("-------Destinos-------");
+			 System.out.println("1 - Cadastre um tipo de destino: ");
+			 System.out.println("2 - Consulte seu qual seu tipo de destino cadastrado: ");
+			 System.out.println("3 - Atualize seu tipo de destino: ");
+			 System.out.println("4 - Delete seu tipo de destino: ");
+			 System.out.println("0 - Sair");
+			 
+			 opcao = input.nextInt();
+			 
+			 switch(opcao) {
+			 case 1:
+				 System.out.println("Cadastrar Tipo de Destino");
+				 System.out.println("1 - Internacional");
+				 internacionais = input.nextLine();
+				 System.out.println("2 - Nacional");
+				 nacionais = input.nextLine();
+				 System.out.println("3 - Pacotes de familia: ");
+				 pcts_familia = input.nextLine();
+				
+				 Destinos Destinos = new Destinos();
+				 
+				 Destinos.setDestino();
+				 
+				 destinoDAO.save(Destinos);
+				 
+				 System.out.println("Cadastro Realizado!");
+				 break;
+				 
+			 case 2:
+				 
+				 for (Destinos a : destinoDAO.getDestinos()) {
+					 System.out.println("Id: " + a.getId_destinos() + "Destinos" + a.getId_destinos());	 
+				 }
+				 
+				 System.out.println("Consulta Realizada");
+				 break;
+				 
+			 case 3:
+				 
+				 System.out.println("Digite o ID Cadastrado: ");
+				 id_destinos = input.nextInt();
+				 
+				 Destinos destinos = new Destinos(id_destinos);
+				 destinoDAO.update(destinos);
+				 break;
+				 
+			 case 4:
+					
+				 System.out.println("Insira o id para excluir o pacote ");
+				 posicao = input.nextInt();
+				 
+				 pacotesDAO.removeById(posicao);
+				 
+				 System.out.println("Pacote excluido");
+				 break;
+				 
+			 default: 
+				 System.out.println(opcao != 0 ? "Opção Inválida, escolha uma opção válida!" : "");
+				 break;
+			 }
+		 }while(opcao != 0);
+		 input.close();
+		 System.out.println("Finalizado");
+	 }
+		 
+}

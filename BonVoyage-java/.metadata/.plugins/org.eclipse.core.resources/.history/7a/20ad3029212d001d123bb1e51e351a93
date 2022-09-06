@@ -1,0 +1,12 @@
+package DAO;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import Connection.ConnectionMysql;
+import model.Endereco;
+
+
+public class enderecoDAO {
+
+}

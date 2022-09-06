@@ -1,0 +1,12 @@
+package Connection;
+
+import java.sql.Connection;
+
+public class Connection_Mysql {
+	
+	public static Connection createConnection_Mysql() throws Exception{
+		
+	}
+
+	
+}

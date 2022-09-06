@@ -1,0 +1,84 @@
+package model ;
+
+import java.util.List;
+
+public class Clientes {
+	
+	private String id_cpf;
+	private String email;
+	private String senha;
+	private String nome;
+	private int telefone;
+	
+	public void acessa_Comprar() {
+
+	}
+	
+	public void acessa_Endereco() {
+	
+	}
+	
+	public Clientes (String id_cpf, String nome) {
+		
+	}
+	
+	public Clientes(String id_cpf, String email, String senha, String nome, int telefone) {
+		super();
+		this.id_cpf = id_cpf;
+		this.email = email;
+		this.senha = senha;
+		this.nome = nome;
+		this.telefone = telefone;
+	}
+
+	public Clientes() {
+		
+	}
+
+	public String getId_cpf() {
+		return id_cpf;
+	}
+
+	public void setId_cpf(String id_cpf) {
+		this.id_cpf = id_cpf;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getSenha() {
+		return senha;
+	}
+
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public int getTelefone() {
+		return telefone;
+	}
+
+	public void setTelefone(int telefone) {
+		this.telefone = telefone;
+	}
+
+	public void add(List<Clientes> clientes) {
+		
+	}
+	
+}
+
+
