@@ -175,7 +175,7 @@ button:hover {
 h4, h2{
     text-align: center;
     padding: 20px;
-    margin: 2rem;
+    margin: 3rem auto 3rem auto;
 }
 
 /*cards pgn 1*/
@@ -322,13 +322,11 @@ h4, h2{
     align-items: center;
     justify-content: center;
 }
-
 .cards img{
     border-radius: 5px;
     height: 10rem;
     width: 100%;
 }
-
 .btn-card{
     width: 100%;
     margin: auto;
@@ -340,42 +338,37 @@ h4, h2{
 .form{
     margin: 85px 10px 0 10px;
 }
-
 .formulario label{
     font-size: 14px;
 }
-
 .form-check{
     margin:15px;
 }
 
 /*Cadastro*/
-.cadastro a{
-    font-size: 10px;
+.cadastre-se{
     text-decoration: none;
-    color: #faaca8;
+    color:#faaca8;
     cursor: pointer;
 }
-.Cadastro{
+.cadastro{
     align-items: center;
     justify-content: center;
-    width: 75%;
-    margin: 5rem auto 0 auto;
-    padding: 2rem;
-    background-color: aliceblue;
+    background: white;
+    width: 50%;
+    margin: 10rem auto;
+    border-radius: 25px;
+    padding: 30px;
+    opacity: 0.7;
 }
-.dados_pessoais, .dados_pessoais label{
-    display: table-row;
-    margin: auto;
-    padding: 1rem;
-}
-.endereco, .endereco label{
+.dados_pessoais, .endereco, .cad{
+    display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
-}
-.dados_pessoais input{
-    width: 30rem;
+    text-align: center;
+    margin:auto;
+    padding: 10px;
+    opacity:1;
 }
 
 /*footer*/

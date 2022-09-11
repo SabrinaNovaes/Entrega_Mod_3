@@ -59,42 +59,76 @@
       </div>
     </nav>
   </header>
-  <!--form-->
-  <div class="Cadastro">
-    <h2 class="cad">Cadastro</h2>
+  <form class="cadastro">
+    <div class="row">
+      <h2>Cadastro</h2>
+      <hr>
+      <h4>Dados Pessoais</h4>
+      <div class="col">
+        <label class="dados_pessoais">Nome</label>
+        <input type="text" class="cad" placeholder="Digite seu nome">
+      </div>
+      <div class="col">
+        <label class="dados_pessoais">Sobrenome</label>
+        <input type="text" class="cad" placeholder="Digite seu sobrenome">
+      </div>
+      <div class="col">
+        <label class="dados_pessoais">CPF</label>
+        <input type="number" class="cad" placeholder="Digite seu cpf">
+      </div>
+      <div class="col">
+        <label class="dados_pessoais">Data de Nascimento</label>
+        <input type="date" class="cad" placeholder="">
+      </div>
+        <div class="col">
+          <label class="dados_pessoais">Email</label>
+          <input type="email" class="cad" placeholder="Digite seu email">
+        </div>
+        <div class="col">
+          <label class="dados_pessoais">Senha</label>
+          <input type="password" class="cad" placeholder="*******">
+        </div>
+        <div class="col">
+          <label class="dados_pessoais">Telefone</label>
+          <input type="tel" class="cad" placeholder="(00)0000-0000">
+        </div>
+          <div class="col">
+          <label class="dados_pessoais">Possui Whatsapp nesse número?</label>
+          <input type="radio" name="whatsapp" value="Sim" class="cad">
+          <label class="dados_pessoais">Sim</label>
+          <input type="radio" name="whatsapp" value="Não" class="cad"> 
+          <label class="dados_pessoais">Não</label>
+          </div>
+    </div>
     <hr>
-    <form class="dados_pessoais">
-      <h5>Dados Pessoais</h5>
-      <label>Nome</label>
-      <input type="text">
-      <label>CPF</label>
-      <input type="number">
-      <label>Email</label>
-      <input type="email">
-      <label>Confirme seu email</label>
-      <input type="email">
-      <label>Escolha uma senha</label>
-      <input type="password">
-      <label>Confirme sua senha</label>
-      <input type="password">
-    </form>
-    <hr>
-    <form class="endereco">
-      <h5>Endereço</h5>
-      <label>Rua</label>
-      <input type="text">
-      <label>N°</label>
-      <input type="text">
-      <label>CEP</label>
-      <input type="number">
-      <label>Bairro</label>
-      <input type="text">
-      <label>Cidade</label>
-      <input type="text">
-      <label>Estado</label>
-      <input type="text">
-    </form>
-  </div>
+    <h4>Endereço</h4>
+    <div class="row">
+      <div class="col">
+        <label class="endereco">Rua</label>
+        <input type="text" class="cad" placeholder="Digite o nome da Rua">
+      </div>
+      <div class="col">
+        <label class="endereco">Nº</label>
+        <input type="number" class="cad" placeholder="Digite o número">
+      </div>
+      <div class="col">
+        <label class="endereco">Bairro</label>
+        <input type="text" class="cad" placeholder="Digite o bairro">
+      </div>
+      <div class="col">
+        <label class="endereco">Cidade</label>
+        <input type="text" class="cad" placeholder="Digite sua cidade">
+      </div>
+      <div class="col">
+        <label class="endereco">Estado</label>
+        <input type="text" class="cad" placeholder="Digite seu Estado">
+      </div>
+      <div class="col">
+        <label class="endereco">CEP</label>
+        <input type="text" class="cad" placeholder="00000-000">
+      </div>
+    </div>
+  </form>
   <hr>
   <!--footer-->
   <footer>
@@ -155,7 +189,7 @@
             <i class="bi bi-eye-slash"></i>
             <label for="formGroupExampleInput2" class="form-label">Senha</label>
             <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="*****">
-            <a class="cadastro" href="./cadastro.html">Cadastre-se</a>
+            <p>Não possui conta? <a class="cadastre-se" href="./cadastro.html">Cadastre-se</a> aqui!</p>
             <button type="button" class="enviar" data-bs-dismiss="modal">Enviar</button>
           </div>
           <div class="modal-footer">
