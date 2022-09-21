@@ -355,7 +355,7 @@ h4, h2{
     align-items: center;
     justify-content: center;
     background: white;
-    width: 50%;
+    width: 53%;
     margin: 10rem auto;
     border-radius: 25px;
     padding: 30px;
@@ -370,7 +370,6 @@ h4, h2{
     padding: 10px;
     opacity:1;
 }
-
 /*footer*/
 .footer li, .footer p{
     display: flex;
